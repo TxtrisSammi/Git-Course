@@ -18,6 +18,10 @@ The Task Tracker tracks the tasks that you have to do. Everything is done throug
 |AddToList | String[] list, String itemToAppend | String[], returns new array with item appended |
 | main     | String[] args                      | void, runs the main code block                 |
 
+### How To Run
+
+` 
+
 ### Extra
 
 [Java Documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html)
