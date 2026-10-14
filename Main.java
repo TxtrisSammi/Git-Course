@@ -16,6 +16,13 @@ void main(String[] args) {
 	}
 
 	System.out.println("My tasks:");
+
+// Bonus
+	for (int i = 0; i < 20; i++) {
+    System.out.print("-");
+	}
+	System.out.println();
+
 	if (!task1Removed) {
 		System.out.println("1. " + status1 + " " + task1);
 	}
