@@ -2,20 +2,29 @@ void main(String[] args) {
 	String task1 = "Buy milk";
 	String task2 = "Walk the dog";
 	boolean task1Removed = false;
-	boolean task2Removed = true;
-	
-	String[] taskList = {task1, task2};
-	
-	taskList = AddToList(taskList, "Go home");
+	boolean task2Removed = false;
+	boolean task1Done = true;
+  boolean task2Done = false;
+
+  String status1 = "[ ]";
+  if (task1Done) {
+			status1 = "[x]";
+	}
+	String status2 = "[ ]";
+	if (task2Done) {
+			status2 = "[x]";
+	}
 
 	System.out.println("My tasks:");
 	if (!task1Removed) {
-		System.out.println("1. " + task1);
+		System.out.println("1. " + status1 + " " + task1);
 	}
 
 	if (!task2Removed) {
-		System.out.println("2. " + task2);
+		System.out.println("2. " + status2 + " " + task2);
 	}
+
+//  String[] taskList = {task1, task2};
 //	PrintList(taskList);
 
 }
