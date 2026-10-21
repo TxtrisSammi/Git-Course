@@ -20,7 +20,9 @@ The Task Tracker tracks the tasks that you have to do. Everything is done throug
 
 ### How To Run
 
-` 
+```
+$ java Main.java
+```
 
 ### Extra
 
