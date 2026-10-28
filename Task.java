@@ -1,6 +1,8 @@
 public class Task {
+	  String TaskName = "Task";
     boolean done = false;
 
-    public Task() {
+    public Task(String taskName) {
+			this.taskName = taskName;
     }
 }
