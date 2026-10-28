@@ -53,25 +53,14 @@ void main(String[] args) {
         System.arraycopy(list, 0, newList, 0, list.length);
         newList[newList.length - 1] = itemToAppend;
 
-        return newList;
-    }
+	return newList;
+}
 
-    public static void countTasks(List<Task> tasks) {
-        int total = tasks.size();
-        int done = 0;
-        for (Task t : tasks) {
-            if (t.done) {
-                done++;
-            }
-        }
-        System.out.println(done + "/" + total + " tasks complete");
-    }
+public static void addTask(String taskName) {
+    addTask(taskName, "none", "normal");
+}
 
-    public static void addTask(String taskName) {
-        addTask(taskName, "normal");
-    }
-
-    public static void addTask(String taskName, String priority) {
-        tasks.add(new Task(taskName));
-        System.out.println("Added task: " + taskName + " (priority: " + priority + ")");
-    }
+public static void addTask(String taskName, String dueDate, String priority) {
+    tasks.add(new Task(taskName));
+    System.out.println("Added task: " + taskName + " (due " + dueDate + ", priority: " + priority + ")");
+}
