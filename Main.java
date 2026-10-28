@@ -6,6 +6,8 @@ void main(String[] args) {
         boolean task1Done = true;
         boolean task2Done = false;
 
+				list<Task> tasks = new ArrayList<Task>();
+
         String status1 = "[ ]";
         if (task1Done) {
             status1 = "[x]";
