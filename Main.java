@@ -50,3 +50,12 @@ String[] AddToList(String[] list, String itemToAppend) {
 
 	return newList;
 }
+
+public static void addTask(String taskName) {
+    addTask(taskName, "none");
+}
+
+public static void addTask(String taskName, String dueDate) {
+    tasks.add(new Task(taskName));
+    System.out.println("Added task: " + taskName + " (due " + dueDate + ")");
+}
