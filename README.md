@@ -6,6 +6,7 @@ The Task Tracker tracks the tasks that you have to do. Everything is done throug
 
 ### Features
 
+- Assign a priority to each task
 - Stores the list
 - Prints the list
 - Displays tasks neatly

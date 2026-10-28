@@ -60,3 +60,12 @@ void main(String[] args) {
         }
         System.out.println(done + "/" + total + " tasks complete");
     }
+
+public static void addTask(String taskName) {
+    addTask(taskName, "normal");
+}
+
+public static void addTask(String taskName, String priority) {
+    tasks.add(new Task(taskName));
+    System.out.println("Added task: " + taskName + " (priority: " + priority + ")");
+}
