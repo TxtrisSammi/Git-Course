@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 void main(String[] args) {
         String task1 = "Buy milk";
         String task2 = "Walk the dog";
@@ -6,7 +9,6 @@ void main(String[] args) {
         boolean task1Done = true;
         boolean task2Done = false;
 
-				List<Task> tasks = new ArrayList<Task>();
 
         String status1 = "[ ]";
         if (task1Done) {
@@ -37,6 +39,8 @@ void main(String[] args) {
 //	PrintList(taskList);
     }
 
+    static List<Task> tasks = new ArrayList<>();
+
     void PrintList(String[] list) {
         for (int i = 0; i < list.length; i++) {
             System.out.println((i + 1) + ". " + list[i]);
@@ -63,11 +67,11 @@ void main(String[] args) {
         System.out.println(done + "/" + total + " tasks complete");
     }
 
-public static void addTask(String taskName) {
-    addTask(taskName, "normal");
-}
+    public static void addTask(String taskName) {
+        addTask(taskName, "normal");
+    }
 
-public static void addTask(String taskName, String priority) {
-    tasks.add(new Task(taskName));
-    System.out.println("Added task: " + taskName + " (priority: " + priority + ")");
-}
+    public static void addTask(String taskName, String priority) {
+        tasks.add(new Task(taskName));
+        System.out.println("Added task: " + taskName + " (priority: " + priority + ")");
+    }
